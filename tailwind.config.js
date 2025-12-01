@@ -1,22 +1,11 @@
-// tailwind.config.js
-/** @type {import("tailwindcss").Config} */
-const config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ["system-ui", "sans-serif"],
-        mono: ["ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
-      },
-      colors: {
-        background: "#020617", // slate-950-ish
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
-
-export default config;

@@ -21,7 +21,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Custom helpers */
+/* Helper class for spacing sections */
 .section-padding {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
