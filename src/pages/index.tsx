@@ -67,7 +67,7 @@ function HeroSection() {
         className="mb-6 h-32 w-32 overflow-hidden rounded-full border border-blue-400/70 bg-blue-950/40 shadow-[0_0_40px_rgba(59,130,246,0.5)]"
       >
         <img
-          src="https://drive.google.com/uc?export=view&id=1y57S06uNzmr8ASEPaTE9hFjCpam415KX"
+          src="https://chsbelztyy3vixll.public.blob.vercel-storage.com/profile.jpg"
           alt="Kostas profile"
           className="h-full w-full object-cover"
         />
