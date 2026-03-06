@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Kostas | Machine Learning Developer</title>
+        <title>Kostas Software | Machine Learning Developer</title>
         <meta
           name="description"
-          content="Portfolio of Kostas, a machine learning developer in training working with Python, TensorFlow, and modern web technologies like Next.js."
+          content="Portfolio of Kostas, a Software | machine learning developer in training working with Python, TensorFlow, and modern web technologies like Next.js."
         />
       </Head>
 
@@ -156,9 +156,11 @@ function AboutSection() {
         viewport={{ once: true }}
         className="text-sm leading-relaxed text-gray-300 sm:text-base"
       >
-        I&apos;m studying an Applied Machine Learning professional degree and
-        learning by building real projects — from YouTube sentiment analysis
-        with TensorFlow to full-stack ideas with TypeScript and Next.js.
+        I&apos;m a self-employed business operator transitioning into Applied Machine Learning and software development. After building and running my own service-based business, I decided to formalize what always drove me: systems, optimization, and data-driven decision making. 
+        Today, I am focused on Python, SQL, backend development, and practical machine learning  building solutions that improve operations, not just prototypes that stay in notebooks.
+        Running a business gave me full ownership of revenue, customer acquisition, retention strategy, and operational efficiency. 
+        That experience shapes how I approach tech, I think in metrics, scalability, and automation. I have built projects involving APIs, data processing, and backend logic, and I am developing production-ready skills in Docker and system architecture. I understand both the business problem and the technical implementation — and how to connect the two.
+        Now, I am seeking internships or junior roles in Machine Learning, Data Analytics, Softwares engineering or Backend Development where I can contribute to real systems, strengthen my engineering discipline, and grow within a strong technical team. Long term, I aim to build ML/AI-driven tools that optimize operations for small and medium-sized businesses.
       </motion.p>
 
       <motion.p
@@ -168,8 +170,8 @@ function AboutSection() {
         viewport={{ once: true }}
         className="text-sm leading-relaxed text-gray-300 sm:text-base"
       >
-        My goal is to go from idea → model → API → UI, and ship genuinely useful
-        tools.
+        
+        I am passionate about learning and building in public. I share my projects, code, and insights on GitHub and Twitter, and I write detailed blog posts to explain my work and what I&apos;ve learned along the way. I believe in the power of community and open source, and I am excited to connect with others who share my interests in machine learning, software development, and building practical tools.
       </motion.p>
     </section>
   );
@@ -200,7 +202,7 @@ function ProjectsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="rounded-xl border border-white/10 bg-white/5 p-5 shadow-md shadow-blue-900/40"
+          className="flex h-full flex-col rounded-xl border border-white/10 bg-white/5 p-5 shadow-md shadow-blue-900/40"
         >
           <h3 className="mb-2 text-lg font-semibold text-blue-300">
             YouTube Sentiment Analyzer
@@ -220,9 +222,10 @@ function ProjectsSection() {
             <Tag>TensorFlow</Tag>
             <Tag>Flask</Tag>
             <Tag>YouTube API</Tag>
+            
           </div>
 
-          <div className="flex flex-wrap gap-4 text-sm">
+          <div className="mt-auto flex flex-wrap gap-4 text-sm">
             <a
               href="https://github.com/Costas1992/youtube_sentiment"
               target="_blank"
@@ -240,53 +243,100 @@ function ProjectsSection() {
           </div>
         </motion.div>
 
-        {/* Placeholder */}
-        {/* Project 2 – Portfolio Website */}
-<motion.div
-  initial={{ opacity: 0, y: 16 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
-  viewport={{ once: true }}
-  className="rounded-xl border border-white/10 bg-white/5 p-5 shadow-md shadow-blue-900/40"
->
-  <h3 className="mb-2 text-lg font-semibold text-blue-300">
-    Personal Portfolio Website
-  </h3>
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="flex h-full flex-col rounded-xl border border-white/10 bg-white/5 p-5 shadow-md shadow-blue-900/40"
+        >
+          <h3 className="mb-2 text-lg font-semibold text-blue-300">
+            Personal Portfolio Website
+          </h3>
 
-  <p className="mb-3 text-sm text-gray-300">
-    A custom-built portfolio using Next.js, Tailwind CSS v4, Framer Motion, and
-    fully deterministic animated particles. Designed to be clean, fast, and visually
-    expressive while staying lightweight and developer-friendly.
-  </p>
+          <p className="mb-3 text-sm text-gray-300">
+            A custom-built portfolio using Next.js, Tailwind CSS v4, Framer Motion, and
+            fully deterministic animated particles. Designed to be clean, fast, and visually
+            expressive while staying lightweight and developer-friendly.
+          </p>
 
-  <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-400">
-    Tech
-  </p>
+          <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-400">
+            Tech
+          </p>
 
-  <div className="mb-3 flex flex-wrap gap-2 text-xs">
-    <Tag>Next.js</Tag>
-    <Tag>Tailwind v3</Tag>
-    <Tag>Framer Motion</Tag>
-    <Tag>Particles</Tag>
-  </div>
+          <div className="mb-3 flex flex-wrap gap-2 text-xs">
+            <Tag>Next.js</Tag>
+            <Tag>Tailwind v3</Tag>
+            <Tag>Framer Motion</Tag>
+            <Tag>Particles</Tag>
+          </div>
 
-  <div className="flex flex-wrap gap-4 text-sm">
-    <a
-      href="https://github.com/Costas1992/kostas-portfolio-v2"
-      target="_blank"
-      className="text-blue-400 underline underline-offset-4 hover:text-blue-300"
-    >
-      🔗 View on GitHub
-    </a>
+          <div className="mt-auto flex flex-wrap gap-4 text-sm">
+            <a
+              href="https://github.com/Costas1992/kostas-portfolio-v2"
+              target="_blank"
+              className="text-blue-400 underline underline-offset-4 hover:text-blue-300"
+            >
+              🔗 View on GitHub
+            </a>
 
-    <a
-      href="/blog/portfolio-site"
-      className="text-gray-300 underline underline-offset-4 hover:text-blue-300"
-    >
-      📝 Read project write-up
-    </a>
-  </div>
-</motion.div>
+            <a
+              href="/blog/portfolio-site"
+              className="text-gray-300 underline underline-offset-4 hover:text-blue-300"
+            >
+              📝 Read project write-up
+            </a>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="flex h-full flex-col rounded-xl border border-white/10 bg-white/5 p-5 shadow-md shadow-blue-900/40"
+        >
+          <h3 className="mb-2 text-lg font-semibold text-blue-300">
+            Secure Expense API
+          </h3>
+
+          <p className="mb-3 text-sm text-gray-300">
+            A secure backend expense tracking API built with FastAPI, JWT authentication,
+            SQLAlchemy, PostgreSQL, and Alembic. Created to practice real-world backend
+            architecture, authentication, and protected routes.
+          </p>
+
+          <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-400">
+            Tech
+          </p>
+
+          <div className="mb-3 flex flex-wrap gap-2 text-xs">
+            <Tag>Python</Tag>
+            <Tag>FastAPI</Tag>
+            <Tag>JWT</Tag>
+            <Tag>PostgreSQL</Tag>
+            <Tag>SQLAlchemy</Tag>
+            <Tag>Alembic</Tag>
+            <Tag>Docker</Tag>
+          </div>
+
+          <div className="mt-auto flex flex-wrap gap-4 text-sm">
+            <a
+              href="https://github.com/Costas1992/secure-expense-api"
+              target="_blank"
+              className="text-blue-400 underline underline-offset-4 hover:text-blue-300"
+            >
+              🔗 View on GitHub
+            </a>
+
+            <a
+              href="/blog/secure-expense-api"
+              className="text-gray-300 underline underline-offset-4 hover:text-blue-300"
+            >
+              📝 Read project write-up
+            </a>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
