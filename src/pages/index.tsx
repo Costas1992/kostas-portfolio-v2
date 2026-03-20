@@ -258,7 +258,7 @@ function ProjectsSection() {
           <p className="mb-3 text-sm text-gray-300">
             A custom-built portfolio using Next.js, Tailwind CSS v4, Framer Motion, and
             fully deterministic animated particles. Designed to be clean, fast, and visually
-            expressive while staying lightweight and developer-friendly.
+            expressive while staying lightweight and developer friendly.
           </p>
 
           <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-400">
@@ -303,7 +303,7 @@ function ProjectsSection() {
 
           <p className="mb-3 text-sm text-gray-300">
             A secure backend expense tracking API built with FastAPI, JWT authentication,
-            SQLAlchemy, PostgreSQL, and Alembic. Created to practice real-world backend
+            SQLAlchemy, PostgreSQL, and Alembic. Created to practice realworld backend
             architecture, authentication, and protected routes.
           </p>
 
@@ -351,9 +351,9 @@ function ProjectsSection() {
           </h3>
 
           <p className="mb-3 text-sm text-gray-300">
-            A full-stack MLOps app trained on real barbershop visit data. Uses RFM
+            A fullstack MLOps app trained on real barbershop visit data. Uses RFM
             analysis and KMeans clustering to segment 200 clients into Loyal, At Risk,
-            and Lost categories — served via FastAPI and deployed live with Docker.
+            and Lost categories  served via FastAPI and deployed live with Docker.
           </p>
 
           <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-400">
@@ -385,7 +385,7 @@ function ProjectsSection() {
               🚀 Live Demo
             </a>
             <a
-              href="https://costas92-customer-loyalty-classifier.hf.space/dashboard"
+              href="/blog/customer-loyalty-classifier"
               className="text-gray-300 underline underline-offset-4 hover:text-blue-300"
             >
               📝 Read project write-up
