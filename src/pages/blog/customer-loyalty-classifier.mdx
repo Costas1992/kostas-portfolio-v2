@@ -1,0 +1,73 @@
+---
+title: "Customer Loyalty Classifier"
+date: "2026-03-19"
+description: "A full-stack MLOps project using RFM analysis and KMeans clustering to segment  clients into Loyal, At Risk, and Lost categories."
+---
+
+# Customer Loyalty Classifier
+
+## The Problem
+
+Running a servise business means you see patterns — some clients come every three weeks like clockwork, others drift away and never come back. The challenge is knowing _which_ clients are slipping before it's too late to act.
+
+I decided to solve this with machine learning. Using real anonymized visit data from a salon (200 clients, 12 months), I built a system that automatically segments every client into one of three categories: **Loyal**, **At Risk**, or **Lost**.
+
+---
+
+## The Approach — RFM Analysis
+
+RFM is a classic marketing model that scores customers on three dimensions:
+
+- **Recency** — How recently did they visit?
+- **Frequency** — How often do they come?
+- **Monetary** — How much do they spend (total visits as proxy)?
+
+I calculated these three scores for every client, then used **KMeans clustering** to group them into 3 natural segments. The model doesn't just follow fixed rules — it finds the actual patterns in the data.
+
+---
+
+## Tech Stack
+
+| Layer            | Technology                   |
+| ---------------- | ---------------------------- |
+| Data & ML        | Python, Pandas, Scikit-learn |
+| API              | FastAPI + Uvicorn            |
+| Containerization | Docker                       |
+| CI/CD            | GitHub Actions               |
+| Deployment       | HuggingFace Spaces           |
+
+---
+
+## What I Built
+
+**Stage 1** — Project setup with virtual environment and folder structure
+
+**Stage 2** — RFM feature engineering from raw attendance data using Pandas
+
+**Stage 3** — KMeans clustering model with StandardScaler, trained and saved with joblib
+
+**Stage 4** — FastAPI REST endpoint that accepts client data and returns a segment prediction
+
+**Stage 5** — Dockerized the app with a `Dockerfile` and `docker-compose.yml`
+
+**Stage 6** — CI/CD pipeline with GitHub Actions that runs tests on every push
+
+**Stage 7** — Deployed live to HuggingFace Spaces
+
+---
+
+## Key Lessons
+
+**Clustering is unsupervised** — there are no labeled answers to train from. You have to interpret the clusters yourself by looking at their average RFM scores and assigning meaningful labels.
+
+**Scaling matters** — KMeans measures distance. Without StandardScaler, a feature like total visits (0–28) would dominate recency (1–12) just because the numbers are bigger.
+
+**Real data is messy** — clients with zero visits across all months, inconsistent visit patterns, and edge cases all required careful handling before the model could work reliably.
+
+---
+
+## Live Demo
+
+[Try it on HuggingFace Spaces](https://costas92-customer-loyalty-classifier.hf.space)
+
+[ View the code on GitHub](https://github.com/Costas1992/customer-loyalty-classifier)

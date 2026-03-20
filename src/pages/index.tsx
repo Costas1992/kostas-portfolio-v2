@@ -197,6 +197,8 @@ function ProjectsSection() {
       </motion.h2>
 
       <div className="grid gap-6 md:grid-cols-2">
+
+        {/* ── YouTube Sentiment Analyzer ── */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -222,7 +224,6 @@ function ProjectsSection() {
             <Tag>TensorFlow</Tag>
             <Tag>Flask</Tag>
             <Tag>YouTube API</Tag>
-            
           </div>
 
           <div className="mt-auto flex flex-wrap gap-4 text-sm">
@@ -233,7 +234,6 @@ function ProjectsSection() {
             >
               🔗 View on GitHub
             </a>
-
             <a
               href="/blog/youtube-sentiment"
               className="text-gray-300 underline underline-offset-4 hover:text-blue-300"
@@ -243,6 +243,7 @@ function ProjectsSection() {
           </div>
         </motion.div>
 
+        {/* ── Personal Portfolio Website ── */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -279,7 +280,6 @@ function ProjectsSection() {
             >
               🔗 View on GitHub
             </a>
-
             <a
               href="/blog/portfolio-site"
               className="text-gray-300 underline underline-offset-4 hover:text-blue-300"
@@ -289,6 +289,7 @@ function ProjectsSection() {
           </div>
         </motion.div>
 
+        {/* ── Secure Expense API ── */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -328,7 +329,6 @@ function ProjectsSection() {
             >
               🔗 View on GitHub
             </a>
-
             <a
               href="/blog/secure-expense-api"
               className="text-gray-300 underline underline-offset-4 hover:text-blue-300"
@@ -337,6 +337,62 @@ function ProjectsSection() {
             </a>
           </div>
         </motion.div>
+
+        {/* ── Customer Loyalty Classifier ── NEW ── */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="flex h-full flex-col rounded-xl border border-white/10 bg-white/5 p-5 shadow-md shadow-blue-900/40"
+        >
+          <h3 className="mb-2 text-lg font-semibold text-blue-300">
+            Customer Loyalty Classifier
+          </h3>
+
+          <p className="mb-3 text-sm text-gray-300">
+            A full-stack MLOps app trained on real barbershop visit data. Uses RFM
+            analysis and KMeans clustering to segment 200 clients into Loyal, At Risk,
+            and Lost categories — served via FastAPI and deployed live with Docker.
+          </p>
+
+          <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-400">
+            Tech
+          </p>
+
+          <div className="mb-3 flex flex-wrap gap-2 text-xs">
+            <Tag>Python</Tag>
+            <Tag>Scikit-learn</Tag>
+            <Tag>FastAPI</Tag>
+            <Tag>Docker</Tag>
+            <Tag>GitHub Actions</Tag>
+            <Tag>HuggingFace</Tag>
+          </div>
+
+          <div className="mt-auto flex flex-wrap gap-4 text-sm">
+            <a
+              href="https://github.com/Costas1992/customer-loyalty-classifier"
+              target="_blank"
+              className="text-blue-400 underline underline-offset-4 hover:text-blue-300"
+            >
+              🔗 View on GitHub
+            </a>
+            <a
+              href="https://costas92-customer-loyalty-classifier.hf.space"
+              target="_blank"
+              className="text-blue-400 underline underline-offset-4 hover:text-blue-300"
+            >
+              🚀 Live Demo
+            </a>
+            <a
+              href="/blog/customer-loyalty-classifier"
+              className="text-gray-300 underline underline-offset-4 hover:text-blue-300"
+            >
+              📝 Read project write-up
+            </a>
+          </div>
+        </motion.div>
+
       </div>
     </section>
   );
@@ -383,12 +439,12 @@ function SkillsSection() {
           "TensorFlow",
           "Scikit-learn",
           "Flask",
-          "FastAPI (learning)",
+          "FastAPI",
           "TypeScript",
           "React",
           "Next.js",
           "Git & GitHub",
-          "Docker (learning)",
+          "Docker",
         ].map((skill) => (
           <div
             key={skill}
