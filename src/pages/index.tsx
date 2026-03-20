@@ -385,7 +385,7 @@ function ProjectsSection() {
               🚀 Live Demo
             </a>
             <a
-              href="/blog/customer-loyalty-classifier"
+              href="https://costas92-customer-loyalty-classifier.hf.space/dashboard"
               className="text-gray-300 underline underline-offset-4 hover:text-blue-300"
             >
               📝 Read project write-up

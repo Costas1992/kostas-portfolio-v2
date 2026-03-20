@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "src/pages/blog/customer-loyalty-classifier.mdx"  ],
   "exclude": ["node_modules"]
 }
