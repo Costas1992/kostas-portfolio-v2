@@ -7,7 +7,7 @@ export default function CustomerLoyaltyWriteup() {
   return (
     <>
       <Head>
-        <title>Customer Loyalty Classifier – Project Write-Up</title>
+        <title>Customer Loyalty Classifier  Project Write-Up</title>
         <meta
           name="description"
           content="Project write-up for the Customer Loyalty Classifier built with Python, Scikit-learn, FastAPI, and Docker."
@@ -32,15 +32,15 @@ export default function CustomerLoyaltyWriteup() {
 
         <section className="mt-8 space-y-5 text-sm leading-relaxed sm:text-base">
           <p>
-            This project came from a real problem I faced running my own
-            barbershop. Some clients come every three weeks without fail, others
+            This project came from a real problem I faced working for  my own
+        . Some clients come every three weeks without fail, others
             slowly drift away and never come back. The challenge is knowing
             which clients are slipping before it is too late to act.
           </p>
 
           <p>
-            I used real anonymized visit data from my barbershop — 200 clients
-            across 12 months — and built a machine learning system that
+            I used real anonymized visit data — 200 clients
+            across 12 months  and built a machine learning system that
             automatically segments every client into one of three categories:
             Loyal, At Risk, or Lost.
           </p>
